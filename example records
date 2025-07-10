@@ -1,0 +1,4 @@
+INSERT INTO users (name, age, status) VALUES
+('John', 25, 0),
+('Sarah', 30, 1),
+('Michael', 22, 0);
