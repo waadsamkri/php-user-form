@@ -30,4 +30,22 @@ A basic web application that allows users to submit their name and age through a
 ### 2. Setup Steps
 
 #### Step 1: Move Files
-"C:\xampp\htdocs\form-project"
+"C:\xampp\htdocs\form-project":
+
+#### Step 2: Start XAMPP
+Open XAMPP Control Panel and start:
+- Apache
+- MySQL
+
+#### Step 3: Create the Database
+1. Open `http://localhost/phpmyadmin`
+2. Create a new database named `myform`
+3. Run this SQL command to create the table:
+```sql
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+    status TINYINT(1) DEFAULT 0
+);
+
